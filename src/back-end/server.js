@@ -4,19 +4,18 @@ const app = express();
 const port = 3000;
 
 //import route handlers
-const itemRouter = require('./src/server/routers/itemRouter')
+const router = require('./routers/router')
 
 //parse requests
 app.use(express.json());
 //handle requests for static files
-app.use(express.static('client'));
-
+// app.use(express.static('assets'));
 //route handlers
-app.use('/items', itemRouter)
+app.use('/routerpath', router)
 
 
 app.get('/', (req,res)=>{
-    res.sendFile(path.join(__dirname, './src/client/index.html'))
+    res.sendFile(path.join(__dirname, '../../src/index.html'))
 })
 
 

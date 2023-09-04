@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon src/back-end/server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +13,11 @@
   "dependencies": {
     "express": "^4.18.2",
     "mongo": "^0.1.0",
-    "mongoose": "^7.1.0"
+    "mongoose": "^7.1.0",
+    "pg": "^8.11.3",
+    "react": "^18.2.0",
+    "react-router": "^6.15.0",
+    "react-router-dom": "^6.15.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
